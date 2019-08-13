@@ -45,6 +45,10 @@ public class SearchpageTest extends TestBase{
 		 WebDriverWait wait = new WebDriverWait(driver, 10);
 		 wait.until(ExpectedConditions.elementToBeClickable(Searchobject.searchbtn));
 		 Searchobject.userWritingOnSearchTxt(appname);
+			try { Thread.sleep(1000);
+
+		}catch (Exception e) {
+			e.printStackTrace();		}
 	}
 	@Test(priority=4)
 	public void userCanasserttedicon ()   {
